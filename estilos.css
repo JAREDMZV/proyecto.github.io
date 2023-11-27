@@ -1,0 +1,100 @@
+/*---------------------------------------------------------------------------------------->  Boton <-------------------------------------------------------------------------------------*/
+button {
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    backdrop-filter: blur(10px); /* Aplica el efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px);;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    color: #333;
+    transition: background-color 0.3s ease-in-out;
+}
+.btn12 {
+    text-decoration: none;
+}
+
+button:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #540045, #ff714b, #eaff87, #acffe9, #acffe9, #eaff87, #ff714b,#540045);
+    background-size: 800%;
+    border-radius: 12px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+/*---------------------------------------------------------------------------------------->  finalizacion del Boton <-------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------->  Formulario <-------------------------------------------------------------------------------------*/
+.brd{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;  
+    backdrop-filter: blur(10px); /* Aplica el efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px);;
+    border-color:linear-gradient(45deg, #540045, #ff714b, #eaff87, #acffe9, #acffe9, #eaff87, #ff714b,#540045);
+    animation: BORO 20s linear infinite;
+    transition: background-color 0.3s ease-in-out;
+
+}
+@keyframes BORO {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+/*---------------------------------------------------------------------------------------->  Fondo <-------------------------------------------------------------------------------------*/
+
+body{
+    background-color: azure;
+    margin: 0;
+    padding: 0;
+    background-image: url(123.jpeg); /* Ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Opcional: asegura que la imagen cubra toda la altura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*---------------------------------------------------------------------------------------->  Encabezado <-------------------------------------------------------------------------------------*/
+.header-text {
+    font-size: 48px; 
+    font-weight: bold; 
+    color: #333; 
+    margin-bottom: 20px;
+}
+.buble {
+    font-family: 'Baloo 1', cursive;
+    font-size: 50px;
+    color: #000000;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+  
