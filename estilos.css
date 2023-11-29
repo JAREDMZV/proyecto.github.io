@@ -90,11 +90,10 @@ body{
     margin-bottom: 20px;
 }
 .buble {
-    font-family: 'Baloo 1', cursive;
+    font-family: 'Helvetica';
     font-size: 50px;
     color: #000000;
     
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
   

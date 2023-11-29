@@ -29,12 +29,12 @@ body {
       text-align: justify !important;
   }
   .btn-tipo{
-          --bs-btn-color: #4800ff;
+          --bs-btn-color: #7b7b7d;
           --bs-btn-bg: #ffffff;
-          --bs-btn-border-color: #0080ff;
+          --bs-btn-border-color: #767676;
           --bs-btn-hover-color: #fff;
-          --bs-btn-hover-bg: #0011ff;
-          --bs-btn-hover-border-color: #008efb;
+          --bs-btn-hover-bg: #4d4e51;
+          --bs-btn-hover-border-color: #d2d2d2;
           --bs-btn-focus-shadow-rgb: 66,70,73;
           --bs-btn-active-color: #fff;
           --bs-btn-active-bg: #0091ff;
@@ -85,17 +85,21 @@ body {
   max-width: 100%;
   height: auto;
 }
-
-
-
+.card {
+ margin: 20px;
+}
 .card3 {
-  transition: transform .2s; 
+  transition: transform .2s, box-shadow .2s; 
   display: flex;
   align-items: stretch;
+  box-shadow: 4px 8px 0 rgba(0,0,0,0.2);
 }
+
 .card3:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  box-shadow: 8px 16px 0 rgba(0,0,0,0.2);
 }
+
 
 
 
@@ -139,6 +143,33 @@ body {
 .encabezado-fondo {
   animation: fondo 5s infinite; 
 }
+@keyframes slideInLeft {
+  from {
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+  }
+
+  to {
+      transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
+.animated-title {
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-name: slideInLeft, fadeIn;
+}
+
 @keyframes fondo {
   0% { color: rgb(146, 201, 255); }
   25% { color: rgb(0, 106, 255); } 
