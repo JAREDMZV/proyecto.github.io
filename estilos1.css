@@ -1,8 +1,15 @@
 body {
-    background-color: rgb(220, 220, 220);
-    margin: 0;
-    padding: 0;
+background-color: rgb(220, 220, 220);
+margin: 0;
+padding: 0;
 }
+.text-new {
+font-family: 'Courier New', Courier, monospace;
+}
+.animated-title {
+  animation: pulse 0.1s;
+}
+
 .bg-gris{
   background-color: rgb(220, 220, 220) !important;
 }
@@ -120,9 +127,6 @@ h1 {
   box-shadow: 8px 16x 0 rgba(0,0,0,0.2);
 }
 
-
-
-
 .precio {
   font-family: Arial, sans-serif;
   font-size: 2em; 
@@ -197,7 +201,80 @@ h1 {
   75% { color: #5134f3; } 
   100% { color: rgb(0, 183, 255); } 
 }
+.form-control {
+border: none;
+border-bottom: 1px solid #000;
+border-radius: 0;
+box-shadow: none;
+}
+.border { 
+  background-image: url('fondofm.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header {
+  font-family: 'Roboto', sans-serif;
+}
 
+.header {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(63, 63, 94) 35%, rgb(97, 102, 103) 100%);
+  background-size: 200% auto;
+  color: white;
+  padding: 50px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: gradient 10s ease infinite; /* Agregar la animación aquí */
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.moving-border {
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(45deg, #f3ec78, #af4261);
+  animation: border-move 2s linear infinite;
+}
+
+@keyframes border-move {
+  0% {border-image-source: linear-gradient(45deg, #f3ec78, #af4261);}
+  100% {border-image-source: linear-gradient(45deg, #af4261, #f3ec78);}
+}
+
+table {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background-color: #f3ec78;
+  color: #af4261;
+}
+
+td {
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.creator-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  animation: fadeIn 2s;
+}
+
+/* Efecto de aparición suave */
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
 
 @media (max-width: 768px) {
     .img-tm {
