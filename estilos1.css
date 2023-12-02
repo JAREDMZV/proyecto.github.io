@@ -208,9 +208,10 @@ border-radius: 0;
 box-shadow: none;
 }
 .border { 
-  background-image: url('fondofm.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
 }
 .header {
   font-family: 'Roboto', sans-serif;
@@ -245,7 +246,16 @@ box-shadow: none;
 
 table {
   background-color: #f9f9f9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  border-collapse: collapse;
+  margin: 50px auto;
+  animation: animate__animated animate__bounceIn;
+  
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
 }
 
 th {
@@ -253,8 +263,8 @@ th {
   color: #af4261;
 }
 
-td {
-  color: #333;
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 tr:nth-child(even) {
@@ -270,11 +280,7 @@ tr:nth-child(even) {
   animation: fadeIn 2s;
 }
 
-/* Efecto de aparición suave */
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
+
 
 @media (max-width: 768px) {
     .img-tm {

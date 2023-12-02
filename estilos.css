@@ -50,7 +50,7 @@ button:hover::before {
     border-radius: 8px;
     padding: 20px;  
     backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px);;
+    -webkit-backdrop-filter: blur(10px);
     border-color:linear-gradient(45deg, #540045, #ff714b, #eaff87, #acffe9, #acffe9, #eaff87, #ff714b,#540045);
     animation: BORO 20s linear infinite;
     transition: background-color 0.3s ease-in-out;
