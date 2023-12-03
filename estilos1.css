@@ -193,6 +193,9 @@ h1 {
   animation-fill-mode: both;
   animation-name: slideInLeft, fadeIn;
 }
+.omg {
+  height: 180px !important;
+}
 
 @keyframes fondo {
   0% { color: rgb(146, 201, 255); }
