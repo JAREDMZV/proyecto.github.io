@@ -4,7 +4,7 @@ button {
     cursor: pointer;
     border: none;
     padding: 10px 20px;
-    backdrop-filter: blur(10px); /* Aplica el efecto de desenfoque */
+    backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px);;
     font-size: 24px;
     font-weight: bold;
@@ -73,7 +73,7 @@ body{
     background-color: azure;
     margin: 0;
     padding: 0;
-    background-image: url(123.jpeg); 
+    background-image: url(fondofm.jpeg); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
