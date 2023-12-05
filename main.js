@@ -21,11 +21,12 @@ function animateDiv() {
             rotate: '1turn',
             backgroundColor: '#FFF',
             duration: 2000,
-            loop: false 
+            loop: false // Para una sola vuelta de la animación
         });
-        window.removeEventListener('scroll', animateDiv); 
+        window.removeEventListener('scroll', animateDiv);
+        window.removeEventListener('touchmove', animateDiv); // Elimina el evento touchmove después de la animación
     }
 }
 
 window.addEventListener('scroll', animateDiv);
-
+window.addEventListener('touchmove', animateDiv); // Agrega el evento touchmove para dispositivos táctiles
